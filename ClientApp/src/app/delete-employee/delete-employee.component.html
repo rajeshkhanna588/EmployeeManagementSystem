@@ -1,0 +1,31 @@
+<p>delete-employee works!</p>
+
+<!--<form [formGroup]="employeeUpdateForm" (ngSubmit)="submitForm()">-->
+<div>
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" [(ngModel)]="empList.name" name="name" class="form-control" />
+  </div>
+  <div class="form-group">
+    <label>Phone Number</label>
+    <input type="text" [(ngModel)]="empList.phoneNo" name="phoneNo" class="form-control" />
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="text" [(ngModel)]="empList.email" name="email" class="form-control" />
+  </div>
+  <div class="form-group">
+    <label>Country</label>
+    <input type="text" [(ngModel)]="empList.country" name="country" class="form-control" />
+  </div>
+  <div class="form-group">
+    <label>State</label>
+    <input type="text" [(ngModel)]="empList.state" name="state" class="form-control" />
+  </div>
+  <div class="form-group">
+    <label>District</label>
+    <input type="text" [(ngModel)]="empList.district" name="district" class="form-control" />
+  </div>
+  <button type="button" (click)="DeleteEmployee(empList.id)">Delete</button>
+</div>
+<!--</form>-->
